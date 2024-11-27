@@ -1,0 +1,23 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\George\\Desktop\\JavaFX\\lib\\javafx.base.jar",
+        "c:\\Users\\George\\Desktop\\JavaFX\\lib\\javafx.controls.jar",
+        "c:\\Users\\George\\Desktop\\JavaFX\\lib\\javafx.fxml.jar",
+        "c:\\Users\\George\\Desktop\\JavaFX\\lib\\javafx.graphics.jar",
+        "c:\\Users\\George\\Desktop\\JavaFX\\lib\\javafx.media.jar",
+        "c:\\Users\\George\\Desktop\\JavaFX\\lib\\javafx.swing.jar",
+        "c:\\Users\\George\\Desktop\\JavaFX\\lib\\javafx.web.jar",
+        "c:\\Users\\George\\Desktop\\JavaFX\\lib\\javafx-swt.jar",
+        "c:\\Users\\georg\\Desktop\\JavaFX\\lib\\javafx.base.jar",
+        "c:\\Users\\georg\\Desktop\\JavaFX\\lib\\javafx.controls.jar",
+        "c:\\Users\\georg\\Desktop\\JavaFX\\lib\\javafx.fxml.jar",
+        "c:\\Users\\georg\\Desktop\\JavaFX\\lib\\javafx.graphics.jar",
+        "c:\\Users\\georg\\Desktop\\JavaFX\\lib\\javafx.media.jar",
+        "c:\\Users\\georg\\Desktop\\JavaFX\\lib\\javafx.swing.jar",
+        "c:\\Users\\georg\\Desktop\\JavaFX\\lib\\javafx.web.jar",
+        "c:\\Users\\georg\\Desktop\\JavaFX\\lib\\javafx-swt.jar"
+    ]
+}

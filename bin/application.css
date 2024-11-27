@@ -1,0 +1,21 @@
+.root{
+    -fx-background-color: #ee79d3;
+}
+
+.label{
+    -fx-font-size: 20;
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill: "white";
+    -fx-alignment: center;
+}
+
+.button {
+    /* -fx-background-color: #04AA6D; /* Green */  /* 
+    -fx-border: none;
+    -fx-color: white;
+    -fx-padding: 15px 32px;
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 16px; */
+  }

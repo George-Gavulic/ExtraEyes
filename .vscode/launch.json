@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ExtraEyes",
+            "request": "launch",
+            "mainClass": "application.ExtraEyes",
+            "projectName": "ExtraEyes_9f4c0910"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "application.Main",
+            "projectName": "ExtraEyes_9f4c0910"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+            //"vmArgs": "--module-path \"C:/Users/George/Desktop/JavaFX/lib\" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media,javafx.swing,javafx.web"
+        },
+        {
+            "type": "java",
+            "name": "ExtraEyes Launch",
+            "request": "launch",
+            "mainClass": "application.ExtraEyes",
+            "projectName": "ExtraEyes_8432f47",
+            "vmArgs": "--module-path \"C:/Users/georg/Desktop/JavaFX/lib\" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media,javafx.swing,javafx.web"
+
+        }
+    ]
+}

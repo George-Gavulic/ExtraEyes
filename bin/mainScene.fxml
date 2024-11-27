@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="AnchorPlane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <TextField fx:id="tfIngredient" layoutX="244.0" layoutY="228.0" promptText="Seach an Ingredient" />
+      <Label fx:id="lbTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="-7.0" layoutY="96.0" prefHeight="18.0" prefWidth="614.0" text="Welcome to ExtraEyes" textFill="#2215cf" />
+      <Button fx:id="btHomeToIngredient" layoutX="185.0" layoutY="228.0" mnemonicParsing="false" onAction="#switchToIngredient" text="Search" />
+      <Button fx:id="btHomeToSettings" layoutX="507.0" layoutY="28.0" mnemonicParsing="false" onAction="#switchToSettings" text="Settings" />
+      <Button fx:id="btHomeToScanner" layoutX="245.0" layoutY="136.0" mnemonicParsing="false" onAction="#switchToScanner" text="Scan Barcode" />
+      <Button fx:id="btHomeToBarcode" layoutX="147.0" layoutY="187.0" mnemonicParsing="false" onAction="#switchToBarcode" text="Input Barcode" />
+      <TextField fx:id="tfBarcode" layoutX="244.0" layoutY="187.0" promptText="Seach a Barcode" />
+   </children>
+</AnchorPane>
