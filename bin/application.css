@@ -1,21 +1,74 @@
 .root{
-    -fx-background-color: #ee79d3;
+    -fx-background-color: #004890;
+    
 }
 
 .label{
-    -fx-font-size: 20;
-    -fx-font-family: "Lucida Console";
+    -fx-font-size: 14;
+    -fx-font-family: "Arial Black", Gadget, sans-serif;
     -fx-text-fill: "white";
     -fx-alignment: center;
 }
+.imageView{
 
+}
+.button:hover{
+    -fx-background-color: #8fbeff;
+}
+.radioButton{
+    -fx-font-family: "Arial Black", Gadget, sans-serif;
+    -fx-font-size: 10;
+    -fx-text-fill: "white";
+}
+.textArea{
+    -fx-font-size: 15;
+
+}
 .button {
-    /* -fx-background-color: #04AA6D; /* Green */  /* 
+    -fx-font-family: "Arial Black", Gadget, sans-serif;
+    
+
+     /*-fx-background-color: #04AA6D; /* Green */  /* 
     -fx-border: none;
     -fx-color: white;
     -fx-padding: 15px 32px;
     -fx-text-align: center;
     -fx-text-decoration: none;
     -fx-display: inline-block;
-    -fx-font-size: 16px; */
+    -fx-font-size: 5.0px; */
   }
+
+
+#btHomeToScanner {
+        -fx-font-family: "Arial Black", Gadget, sans-serif;
+}
+#btHomeToScanner:hover {
+    -fx-background-color: #f26b6b;
+
+}
+#lbTODONews{
+    -fx-text-fill: "red";
+}
+
+#btHomeToSettings{
+    -fx-background-image: url('png/settingsWhite.png');
+    -fx-background-color: #004890;
+    -fx-background-repeat: no-repeat;
+}
+
+#btHomeToSettings:hover{
+    -fx-background-image: url('png/settingsBlue.png');
+    -fx-background-repeat: no-repeat;
+    
+}
+#apScroll{
+    -fx-background-color: #004890;
+    
+}
+#apScroll Label{
+    -fx-font-size: 15;
+    
+}
+#lbBarcode{
+    -fx-text-fill: #6eb1f4;
+}

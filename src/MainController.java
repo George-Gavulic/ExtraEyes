@@ -2,6 +2,8 @@ import java.io.IOException;
 import java.util.List;
 
 import application.ExtraEyes;
+import javafx.application.Platform;
+import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class MainController {
@@ -29,7 +32,7 @@ public class MainController {
     private Parent root;
 
     String ingredient;
-    String barcode; // TODO set this to an int
+    String barcodeText; // TODO set this to an int
 
 //This section controls switching scene between settings, the scanner, the ingerdient page, and the barcode page. 
     public void switchToSettings(ActionEvent event) throws IOException {
@@ -43,19 +46,13 @@ public class MainController {
         setStage(root);
     }
     public void switchToBarcode(ActionEvent event) throws IOException {
-        //TODO// Check if the inputed barcode is an integer if so, 
-        //if so call the barcode to image function.
-        //if so call the barcode get ingredients functions.
+        barcodeText = tfBarcode.getText();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("BarcodeScene.fxml"));
+        root = loader.load();
 
-        // barcode = tfBarcode.getText();
-        // FXMLLoader loader = new FXMLLoader(getClass().getResource("BarcodeScene.fxml"));
-        // root = loader.load();
-
-        // IngredientController ingredientController = loader.getController();
-        // ingredientController.setIngredient(barcode);
-
-        Parent root = FXMLLoader.load(getClass().getResource("IngredientScene.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        BarcodeController barcodeController = loader.getController();
+        barcodeController.setBarcode(barcodeText);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         setStage(root);
     }
     public void switchToIngredient(ActionEvent event) throws IOException {
@@ -66,7 +63,6 @@ public class MainController {
         IngredientController ingredientController = loader.getController();
         ingredientController.setIngredient(ingredient);
 
-        //Parent root = FXMLLoader.load(getClass().getResource("IngredientScene.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         setStage(root);
     }

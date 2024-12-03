@@ -1,7 +1,12 @@
 package application;
 
 
+import java.io.File;
 import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+import com.github.sarxos.webcam.Webcam;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -34,7 +39,7 @@ public class ExtraEyes extends Application {
 
 
 
-            Image icon = new Image("/icon.png");
+            Image icon = new Image("png/icon.png");
             stage.getIcons().add(icon);
             stage.setTitle("Extra Eyes");
             stage.setScene(scene);
@@ -45,5 +50,8 @@ public class ExtraEyes extends Application {
 
 
     }
-    public static void main(String[] args) {    launch(args);   }
+    public static void main(String[] args) {  
+        
+        
+        launch(args);   }
 }

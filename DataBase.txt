@@ -1,0 +1,4 @@
+butter,green,My sister told me to eat more
+aspartame,red,https://pubmed.ncbi.nlm.nih.gov/28938797/
+mannitol,yellow,-example article here-
+sorbitol,blue,-example article here-

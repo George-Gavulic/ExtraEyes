@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "text",
+            "request": "launch",
+            "mainClass": "text",
+            "projectName": "ExtraEyes_8432f47"
+        },
+        {
+            "type": "java",
             "name": "ExtraEyes",
             "request": "launch",
             "mainClass": "application.ExtraEyes",
@@ -23,7 +30,6 @@
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
-            //"vmArgs": "--module-path \"C:/Users/George/Desktop/JavaFX/lib\" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media,javafx.swing,javafx.web"
         },
         {
             "type": "java",
@@ -32,7 +38,6 @@
             "mainClass": "application.ExtraEyes",
             "projectName": "ExtraEyes_8432f47",
             "vmArgs": "--module-path \"C:/Users/georg/Desktop/JavaFX/lib\" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media,javafx.swing,javafx.web"
-
         }
     ]
 }

@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IngredientController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IngredientController">
    <children>
-      <Label fx:id="lbDisplayedIngredient" layoutX="249.0" layoutY="35.0" text="Seached Ingredient" />
-      <Button fx:id="btIngredientToHome" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMainScene" text="Home" />
-      <Button fx:id="btChangeTextTest" layoutX="129.0" layoutY="200.0" mnemonicParsing="false" text="Button" />
+      <Label fx:id="lbDisplayedIngredient" layoutX="14.0" layoutY="65.0" prefHeight="18.0" prefWidth="350.0" text="Seached Ingredient" />
+      <Button fx:id="btIngredientToHome" layoutX="305.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToMainScene" text="Home" />
+      <Button fx:id="btChangeTextTest" alignment="CENTER" layoutX="105.0" layoutY="410.0" mnemonicParsing="false" onAction="#addNewIngredient" text="Add New Ingredient" />
+      <TextField fx:id="ingredientField" layoutX="105.0" layoutY="258.0" promptText="Name of Ingredient" />
+      <RadioButton fx:id="redButton" layoutX="21.0" layoutY="302.0" mnemonicParsing="false" text="Red (Avoid)" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="color" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="orangeButton" layoutX="22.0" layoutY="332.0" mnemonicParsing="false" text="Orange" textFill="WHITE" toggleGroup="$color">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="yellowButton" layoutX="120.0" layoutY="302.0" mnemonicParsing="false" text="Yellow" textFill="WHITE" toggleGroup="$color">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="greenButton" layoutX="120.0" layoutY="332.0" mnemonicParsing="false" text="Green" textFill="WHITE" toggleGroup="$color">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="blueButton" layoutX="202.0" layoutY="302.0" mnemonicParsing="false" text="Blue (Contravertsal)" textFill="WHITE" toggleGroup="$color">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="purpleButton" layoutX="202.0" layoutY="332.0" mnemonicParsing="false" text="Purple (Bad Experiance)" textFill="WHITE" toggleGroup="$color">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label alignment="CENTER" layoutX="4.0" layoutY="230.0" prefHeight="18.0" prefWidth="350.0" text="Add a new ingredient to the database" />
+      <TextField fx:id="doiField" layoutX="104.0" layoutY="376.0" promptText="Add Article" />
+      <Hyperlink layoutX="14.0" layoutY="97.0" text="Hyperlink" />
    </children>
 </AnchorPane>
