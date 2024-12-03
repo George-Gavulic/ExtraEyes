@@ -1,18 +1,6 @@
-## Getting Started
+Hello! My name is George!
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+I am happy to present to you my project ExtraEyes. It is a JavaFX application that allows you to scan barcodes and display the ingredients and allergens on the product. The application uses the ZXing library to decode barcodes and the JavaFX library to create the user interface.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Why would you use it? 
+Well My program is for anyone who likes to research the indeadients they are putting in their body and also have a problem remebering what they leanred or the specific names of the ingerdients. This program will allow the user to add information about ingretents they research. The user can then scan  barcodes as they shop and this program will tell them what ingredients are in the product and common allergens in the product. As it provides the user with the ingredients it will also provide them with the information they previously entered about the ingredients.
